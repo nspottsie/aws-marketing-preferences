@@ -1,0 +1,1 @@
+# aws-marketing-preferences
