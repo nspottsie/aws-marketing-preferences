@@ -1,0 +1,14 @@
+firefox-standalone:
+  image: selenium/standalone-firefox:3.14.0-arsenic
+  environment:
+    SCREEN_WIDTH: 1366
+    SCREEN_HEIGHT: 768
+    SCREEN_DEPTH: 24
+  ports:
+    - 4444:4444
+
+aws-marketing-preferences:
+  image: aws-marketing-preferences:latest
+  command: ["-e", "jack@testmail.com", "jill@testmail.com"]
+  links:
+   - firefox-standalone
