@@ -10,7 +10,7 @@ Currently the solution will launch selenium, navigate to the [Marketing Preferen
 
 ### Setup
 1. Clone repository
-1. [Download](https://github.com/nspottsie/aws-marketing-preferences/releases/tag/v1.0) the lambda function bundle into the repository
+1. [Download](https://github.com/nspottsie/aws-marketing-preferences/releases/download/v1.0/set_marketing_preferences_lambda.zip) the lambda function bundle into the repository
 1. Open terminal/command prompt. Then: `terraform plan -out plan`
 1. Verify the terraform plan. Then: `terraform apply plan`
 1. When terraform is complete and has created all resources, login to the [AWS Management Console](https://console.aws.amazon.com/), choose the Lambda service, create a sample test event `{ "email_address": "testemail@testdomain.com" }` with a valid email address, and test the function
